@@ -14,7 +14,7 @@ class RateTransformer extends AbstractTransformer
     /**
      * @var array
      */
-    protected array $map = [
+    protected $map = [
         self::FROM      => 'from_id',
         self::TO        => 'to_id',
         self::EXCHANGER => 'exchanger_id',

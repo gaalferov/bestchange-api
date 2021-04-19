@@ -15,12 +15,12 @@ class HttpDownloaderService implements HttpDownloaderInterface
     /**
      * @var string
      */
-    protected string $link = 'http://api.bestchange.ru/info.zip';
+    protected $link = 'http://api.bestchange.ru/info.zip';
 
     /**
      * @var ClientInterface
      */
-    protected ClientInterface $client;
+    protected $client;
 
     /**
      * HttpDownloader constructor.

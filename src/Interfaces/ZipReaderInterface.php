@@ -11,7 +11,7 @@ interface ZipReaderInterface
      *
      * @return $this
      */
-    public function setPath(string $path): self;
+    public function setPath(string $path);
 
     /**
      * @return string|null
@@ -21,12 +21,12 @@ interface ZipReaderInterface
     /**
      * @return $this
      */
-    public function open(): self;
+    public function open();
 
     /**
      * @return $this
      */
-    public function close(): self;
+    public function close();
 
     /**
      * @param string                   $filename

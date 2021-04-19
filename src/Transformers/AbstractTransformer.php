@@ -8,14 +8,14 @@ abstract class AbstractTransformer
     /**
      * @var string
      */
-    protected string $delimiter = ';';
+    protected $delimiter = ';';
 
     /**
      * @param string $delimiter
      *
      * @return $this
      */
-    public function setDelimiter(string $delimiter): self
+    public function setDelimiter(string $delimiter)
     {
         $this->delimiter = $delimiter;
         return $this;

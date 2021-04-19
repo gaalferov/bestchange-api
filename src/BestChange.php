@@ -26,22 +26,22 @@ class BestChange
     /**
      * @var string
      */
-    protected string $archiveName = 'bestchange.zip';
+    protected $archiveName = 'bestchange.zip';
 
     /**
      * @var string|null
      */
-    protected ?string $archivePath = null;
+    protected $archivePath = null;
 
     /**
      * @var ZipReaderInterface
      */
-    protected ZipReaderInterface $reader;
+    protected $reader;
 
     /**
      * @var HttpDownloaderInterface
      */
-    protected HttpDownloaderInterface $downloader;
+    protected $downloader;
 
     /**
      * @param ZipReaderInterface|null      $reader
@@ -81,7 +81,7 @@ class BestChange
      *
      * @return $this
      */
-    public function setArchivePath(string $path): self
+    public function setArchivePath(string $path)
     {
         $this->archivePath = $path;
 
@@ -204,7 +204,7 @@ class BestChange
         }
 
         throw new \InvalidArgumentException(
-            'Called method ' . $class . ' must be implements of ' . Method::class
+            'Called method ' . $class . ' must be implements of ' . MethodInterface::class
         );
     }
 }

@@ -11,8 +11,9 @@
   ],
   "require": {
     "ext-zip": "^1.15",
-    "php": "7.4.*",
-    "guzzlehttp/guzzle": "^6.0|^7.0"
+    "php": ">=7.2.0",
+    "guzzlehttp/guzzle": "^6.0|^7.0",
+    "ext-iconv": "*"
   },
   "autoload": {
     "psr-4": {

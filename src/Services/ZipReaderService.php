@@ -14,17 +14,17 @@ class ZipReaderService implements ZipReaderInterface
     /**
      * @var ZipArchive
      */
-    protected ZipArchive $archive;
+    protected $archive;
 
     /**
      * @var string|null
      */
-    protected ?string $path;
+    protected $path;
 
     /**
      * @var bool
      */
-    private bool $isOpen = false;
+    private $isOpen = false;
 
     /**
      * ParseFromZipService constructor.
@@ -38,7 +38,7 @@ class ZipReaderService implements ZipReaderInterface
         $this->archive = $archive ?? new ZipArchive();
     }
 
-    public function setPath(string $path): self
+    public function setPath(string $path)
     {
         $this->path = $path;
         return $this;
@@ -55,7 +55,7 @@ class ZipReaderService implements ZipReaderInterface
     /**
      * @return $this
      */
-    public function open(): self
+    public function open()
     {
         $this->isOpen = $this->archive->open($this->path);
 
@@ -113,7 +113,7 @@ class ZipReaderService implements ZipReaderInterface
     /**
      * @return $this
      */
-    public function close(): self
+    public function close()
     {
         $this->isOpen = ! $this->archive->close();
         return $this;

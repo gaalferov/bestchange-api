@@ -11,7 +11,7 @@ class CurrencyTransformer extends AbstractTransformer
     /**
      * @var array
      */
-    protected array $map = [
+    protected $map = [
         self::ID      => 'id',
         self::NAME    => 'name',
         self::ANOTHER => 'another',

@@ -10,7 +10,7 @@ class ExchangerTransformer extends AbstractTransformer
     /**
      * @var array
      */
-    protected array $map = [
+    protected $map = [
         self::ID   => 'id',
         self::NAME => 'name',
     ];
