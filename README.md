@@ -1,4 +1,4 @@
-# BestChange API
+# BestChange API (php 7.2 and above)
 A simple package for working with the pseudo API of the bestchage.ru
 
 
@@ -7,11 +7,21 @@ A simple package for working with the pseudo API of the bestchage.ru
 
 ## Requirements
 
-- PHP 7.4 or above
+- PHP 7.2 or above (**decreased from 7.4**)
 - [ZIP extension](http://php.net/manual/en/zip.installation.php)
 
 ## Installation
 
+Add into your composer.json
+```
+"repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/gaalferov/bestchange-api"
+        }
+    ],
+```
+After that you run install command
 ```
 composer require korkoshko/bestchange-api
 ```
@@ -49,3 +59,5 @@ foreach ($bestChange->getExchangers() as $exchanger) {
 
 ## License
 [MIT](https://opensource.org/licenses/MIT)
+
+Thanks, @korkoshko
